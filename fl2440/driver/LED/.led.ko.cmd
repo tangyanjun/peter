@@ -1,0 +1,1 @@
+cmd_/home/tangyanjun/LED/led.ko := /opt/buildroot-2012.08/arm920t/usr/bin/arm-linux-ld -EL -r  -T /home/tangyanjun/kernel/linux-3.0.54/scripts/module-common.lds --build-id  -o /home/tangyanjun/LED/led.ko /home/tangyanjun/LED/led.o /home/tangyanjun/LED/led.mod.o

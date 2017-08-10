@@ -1,0 +1,215 @@
+fbutils.o: fbutils.c ../config.h \
+ /opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/stdio.h \
+ /opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/features.h \
+ /opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/bits/uClibc_config.h \
+ /opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/sys/cdefs.h \
+ /opt/buildroot-2012.08/arm920t/usr/lib/gcc/arm-unknown-linux-uclibcgnueabi/4.5.4/include/stddef.h \
+ /opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/bits/types.h \
+ /opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/bits/wordsize.h \
+ /opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/bits/typesizes.h \
+ /opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/bits/pthreadtypes.h \
+ /opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/endian.h \
+ /opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/bits/endian.h \
+ /opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/byteswap.h \
+ /opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/bits/byteswap.h \
+ /opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/bits/byteswap-common.h \
+ /opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/bits/uClibc_stdio.h \
+ /opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/wchar.h \
+ /opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/bits/wchar.h \
+ /opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/bits/uClibc_mutex.h \
+ /opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/pthread.h \
+ /opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/sched.h \
+ /opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/time.h \
+ /opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/bits/sched.h \
+ /opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/bits/time.h \
+ /opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/bits/uClibc_clk_tck.h \
+ /opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/signal.h \
+ /opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/bits/sigset.h \
+ /opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/bits/setjmp.h \
+ /opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/bits/uClibc_pthread.h \
+ /opt/buildroot-2012.08/arm920t/usr/lib/gcc/arm-unknown-linux-uclibcgnueabi/4.5.4/include/stdarg.h \
+ /opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/bits/stdio_lim.h \
+ /opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/stdlib.h \
+ /opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/sys/types.h \
+ /opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/sys/select.h \
+ /opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/bits/select.h \
+ /opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/sys/sysmacros.h \
+ /opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/alloca.h \
+ /opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/string.h \
+ /opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/unistd.h \
+ /opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/bits/posix_opt.h \
+ /opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/bits/confname.h \
+ /opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/bits/getopt.h \
+ /opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/sys/fcntl.h \
+ /opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/fcntl.h \
+ /opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/bits/fcntl.h \
+ /opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/sys/ioctl.h \
+ /opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/bits/ioctls.h \
+ /opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/asm/ioctls.h \
+ /opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/asm-generic/ioctls.h \
+ /opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/linux/ioctl.h \
+ /opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/asm/ioctl.h \
+ /opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/asm-generic/ioctl.h \
+ /opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/bits/ioctl-types.h \
+ /opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/sys/ttydefaults.h \
+ /opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/sys/mman.h \
+ /opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/bits/mman.h \
+ /opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/bits/mman-common.h \
+ /opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/sys/time.h \
+ /opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/linux/vt.h \
+ /opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/linux/kd.h \
+ /opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/linux/types.h \
+ /opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/asm/types.h \
+ /opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/asm-generic/int-ll64.h \
+ /opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/asm/bitsperlong.h \
+ /opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/asm-generic/bitsperlong.h \
+ /opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/linux/posix_types.h \
+ /opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/linux/stddef.h \
+ /opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/asm/posix_types.h \
+ /opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/linux/fb.h \
+ /opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/linux/i2c.h \
+ font.h fbutils.h
+
+../config.h:
+
+/opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/stdio.h:
+
+/opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/features.h:
+
+/opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/bits/uClibc_config.h:
+
+/opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/sys/cdefs.h:
+
+/opt/buildroot-2012.08/arm920t/usr/lib/gcc/arm-unknown-linux-uclibcgnueabi/4.5.4/include/stddef.h:
+
+/opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/bits/types.h:
+
+/opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/bits/wordsize.h:
+
+/opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/bits/typesizes.h:
+
+/opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/bits/pthreadtypes.h:
+
+/opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/endian.h:
+
+/opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/bits/endian.h:
+
+/opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/byteswap.h:
+
+/opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/bits/byteswap.h:
+
+/opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/bits/byteswap-common.h:
+
+/opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/bits/uClibc_stdio.h:
+
+/opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/wchar.h:
+
+/opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/bits/wchar.h:
+
+/opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/bits/uClibc_mutex.h:
+
+/opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/pthread.h:
+
+/opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/sched.h:
+
+/opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/time.h:
+
+/opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/bits/sched.h:
+
+/opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/bits/time.h:
+
+/opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/bits/uClibc_clk_tck.h:
+
+/opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/signal.h:
+
+/opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/bits/sigset.h:
+
+/opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/bits/setjmp.h:
+
+/opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/bits/uClibc_pthread.h:
+
+/opt/buildroot-2012.08/arm920t/usr/lib/gcc/arm-unknown-linux-uclibcgnueabi/4.5.4/include/stdarg.h:
+
+/opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/bits/stdio_lim.h:
+
+/opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/stdlib.h:
+
+/opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/sys/types.h:
+
+/opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/sys/select.h:
+
+/opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/bits/select.h:
+
+/opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/sys/sysmacros.h:
+
+/opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/alloca.h:
+
+/opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/string.h:
+
+/opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/unistd.h:
+
+/opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/bits/posix_opt.h:
+
+/opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/bits/confname.h:
+
+/opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/bits/getopt.h:
+
+/opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/sys/fcntl.h:
+
+/opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/fcntl.h:
+
+/opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/bits/fcntl.h:
+
+/opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/sys/ioctl.h:
+
+/opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/bits/ioctls.h:
+
+/opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/asm/ioctls.h:
+
+/opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/asm-generic/ioctls.h:
+
+/opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/linux/ioctl.h:
+
+/opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/asm/ioctl.h:
+
+/opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/asm-generic/ioctl.h:
+
+/opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/bits/ioctl-types.h:
+
+/opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/sys/ttydefaults.h:
+
+/opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/sys/mman.h:
+
+/opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/bits/mman.h:
+
+/opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/bits/mman-common.h:
+
+/opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/sys/time.h:
+
+/opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/linux/vt.h:
+
+/opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/linux/kd.h:
+
+/opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/linux/types.h:
+
+/opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/asm/types.h:
+
+/opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/asm-generic/int-ll64.h:
+
+/opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/asm/bitsperlong.h:
+
+/opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/asm-generic/bitsperlong.h:
+
+/opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/linux/posix_types.h:
+
+/opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/linux/stddef.h:
+
+/opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/asm/posix_types.h:
+
+/opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/linux/fb.h:
+
+/opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/linux/i2c.h:
+
+font.h:
+
+fbutils.h:

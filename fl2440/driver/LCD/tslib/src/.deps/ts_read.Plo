@@ -1,0 +1,72 @@
+ts_read.lo: ts_read.c ../config.h tslib-private.h tslib.h \
+ /opt/buildroot-2012.08/arm920t/usr/lib/gcc/arm-unknown-linux-uclibcgnueabi/4.5.4/include/stdarg.h \
+ /opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/sys/time.h \
+ /opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/features.h \
+ /opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/bits/uClibc_config.h \
+ /opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/sys/cdefs.h \
+ /opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/bits/types.h \
+ /opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/bits/wordsize.h \
+ /opt/buildroot-2012.08/arm920t/usr/lib/gcc/arm-unknown-linux-uclibcgnueabi/4.5.4/include/stddef.h \
+ /opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/bits/typesizes.h \
+ /opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/bits/pthreadtypes.h \
+ /opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/endian.h \
+ /opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/bits/endian.h \
+ /opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/byteswap.h \
+ /opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/bits/byteswap.h \
+ /opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/bits/byteswap-common.h \
+ /opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/time.h \
+ /opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/bits/time.h \
+ /opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/sys/select.h \
+ /opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/bits/select.h \
+ /opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/bits/sigset.h \
+ tslib-filter.h tslib.h
+
+../config.h:
+
+tslib-private.h:
+
+tslib.h:
+
+/opt/buildroot-2012.08/arm920t/usr/lib/gcc/arm-unknown-linux-uclibcgnueabi/4.5.4/include/stdarg.h:
+
+/opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/sys/time.h:
+
+/opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/features.h:
+
+/opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/bits/uClibc_config.h:
+
+/opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/sys/cdefs.h:
+
+/opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/bits/types.h:
+
+/opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/bits/wordsize.h:
+
+/opt/buildroot-2012.08/arm920t/usr/lib/gcc/arm-unknown-linux-uclibcgnueabi/4.5.4/include/stddef.h:
+
+/opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/bits/typesizes.h:
+
+/opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/bits/pthreadtypes.h:
+
+/opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/endian.h:
+
+/opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/bits/endian.h:
+
+/opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/byteswap.h:
+
+/opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/bits/byteswap.h:
+
+/opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/bits/byteswap-common.h:
+
+/opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/time.h:
+
+/opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/bits/time.h:
+
+/opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/sys/select.h:
+
+/opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/bits/select.h:
+
+/opt/buildroot-2012.08/arm920t/usr/arm-unknown-linux-uclibcgnueabi/sysroot/usr/include/bits/sigset.h:
+
+tslib-filter.h:
+
+tslib.h:

@@ -1,0 +1,208 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <sys/ioctl.h>
+#include <fcntl.h>
+#include <unistd.h>
+#include <linux/fb.h>
+#include <sys/mman.h>
+
+
+#define KEY1 0x01
+#define KEY2 0x02
+#define KEY3 0x04
+#define KEY4 0x08
+#define PLATDRV_MAGIC   0x60
+#define OFF _IO (PLATDRV_MAGIC,0x18)
+#define ON _IO (PLATDRV_MAGIC,0X19)
+
+
+
+int main (int argc, char **argv)
+{
+    int button_fd;
+    int led_fd;
+    int lcd_fd;
+    int ret_button;
+    int current_button;
+	int i=1;
+	int j=1;
+	int x=1;
+	int y=1;
+    struct fb_var_screeninfo vinfo;
+    char *fbp = 0;
+    unsigned short rgb = 0;
+    unsigned int r = 0, g = 0, b = 0;
+    int seg_len = 0;
+    unsigned long screensize = 0;
+    int seg_num = 0;
+
+    button_fd = open("/dev/button", 0);
+    
+    
+
+    if (button_fd < 0)
+    {
+        printf("open button failed.\n");
+        exit(1);
+    }
+	
+	while (1)
+    {
+        ret_button = read(button_fd, &current_button, sizeof(4));
+        if (ret_button != sizeof(current_button))
+        {
+            printf("Read() button failed.\n");
+        }
+		
+		else
+		{
+		    if (current_button == KEY1)
+			{   
+                lcd_fd = open("/dev/fb0", O_RDWR);
+                ioctl(lcd_fd, FBIOGET_VSCREENINFO, &vinfo);
+                screensize = vinfo.xres * vinfo.yres * 2;
+                fbp = (char *)mmap(0, screensize, PROT_READ | PROT_WRITE, MAP_SHARED, lcd_fd, 0);
+                seg_len = vinfo.yres/6;
+                for (seg_num = 0; seg_num < 6; seg_num++) 
+                {
+                    if (seg_num == 5)
+                        tmp_seg_len = vinfo.yres - seg_len*5;
+                    else
+                        tmp_seg_len = seg_len;
+                    for (y = 0; y < tmp_seg_len; y++)
+                    {
+                        for (x = 0; x < vinfo.xres; x++)
+                        {
+                            location = seg_num*seg_len*vinfo.xres*2 + (y*vinfo.xres+ x)*2;
+                            switch (seg_num)
+                            {
+                                case 0:
+                                    r = 0xff;
+                                    g = (0xff/seg_len)*y;
+                                    b = 0;
+                                    break;
+                                case 1:
+                                    r = (0xff/seg_len)*(seg_len-y);
+                                    g = 0xff;
+                                    b = 0;
+                                    break;
+                                case 2:
+                                    r = 0;
+                                    g = 0xff;
+                                    b = (0xff/seg_len)*y;
+                                    break;
+                                case 3:
+                                    r = 0;
+                                    g = (0xff/seg_len)*(seg_len-y);
+                                    b = 0xff;
+                                    break;
+                                case 4:
+                                    r =  (0xff/seg_len)*y;
+                                    g = 0;
+                                    b = 0xff;
+                                    break;
+                                case 5:
+                                    r = 0xff;
+                                    b = (0xff/seg_len)*(seg_len-y);
+                                    g = 0;
+                                    break;
+                                default:
+                                    printf("%s--%d:unknown seg_num %d\n", __FILE__, __LINE__);
+                                    break;
+
+
+                            }
+                            r = (r*0x1f)/0xff;
+                            g = (g*0x3f)/0xff;
+                            b = (b*0x1f)/0xff;
+                            rgb = (r << 11) | (g << 5) | b;
+                            *((unsigned short*)(fbp + location)) = rgb;
+                        }
+                    }
+                }
+
+                led_fd = open("/dev/led0",O_RDWR,755);
+		        switch (i%2)
+                {
+                     case 0:
+                          ioctl(led_fd, OFF, 0);
+                          i++;
+                          printf("Turn led0 OFF.\n");
+                          break;
+
+                     case 1:
+                          ioctl(led_fd, ON, 0);
+                          i++;
+                          printf("Turn led0 ON.\n"); 
+                          break;
+				}
+				
+			}
+			
+			else if (current_button == KEY2)
+			{
+                led_fd = open("/dev/led1",O_RDWR,755);
+			    switch (j%2)
+                {
+                     case 0:
+                          ioctl(led_fd, OFF, 1);
+                          j++;
+                          printf("Turn led1 OFF.\n");
+                          break;
+                     case 1:
+                          ioctl(led_fd, ON, 1);
+                          j++;
+                          printf("Turn led1 ON.\n");
+                          break;
+				}
+			}
+			
+			else if (current_button == KEY3)
+			{
+                led_fd = open("/dev/led2",O_RDWR,755);
+			    switch (x%2)
+                {
+                     case 0:
+                          ioctl(led_fd, OFF, 2);
+                          x++;
+                          printf("Turn led2 OFF.\n");
+                          break;
+                     case 1:
+                          ioctl(led_fd, ON, 2);
+                          x++;
+                          printf("Turn led2 ON.\n");
+                          break;
+				}
+				
+			}
+		    
+		    else if (current_button == KEY4)
+			{
+                led_fd = open("/dev/led3",O_RDWR,755);
+			    switch (y%2)
+                {
+                     case 0:
+                          ioctl(led_fd, OFF, 3);
+                          y++;
+                          printf("Turn led3 OFF.\n");
+                          break;
+                     case 1:
+                          ioctl(led_fd, ON, 3);
+                          y++;
+                          printf("Turn led3 ON.\n");
+                          break;
+				}
+				
+			}
+	    }	
+	
+		
+	
+	}
+    munmap(lcd_fd, screensize);
+	ioctl(led_fd,OFF);
+    close(led_fd);
+    close(button_fd);
+    close(lcd_fd);	
+	return 0;
+}
