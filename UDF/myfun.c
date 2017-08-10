@@ -3,7 +3,7 @@
  *                  All rights reserved.
  *
  *       Filename:  myfun.c
- *    Description:  This file 
+ *    Description:  This file is definition string function
  *                 
  *        Version:  1.0.0(07/27/2017)
  *         Author:  tangyanjun <519656780@qq.com>
